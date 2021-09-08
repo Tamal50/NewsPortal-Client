@@ -1,0 +1,19 @@
+.navbar {
+    height: auto;
+    width: 100vw;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    background-color: rgb(28, 85, 241);
+
+    .logo{
+
+        img{
+            height: 50px;
+            width: 50px;
+        }
+    }
+    .admin{
+        margin-right: 90px;
+    }
+}

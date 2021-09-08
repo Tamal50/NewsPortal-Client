@@ -1,0 +1,22 @@
+.Catagorybar {
+    background-color: darkmagenta;
+    height: auto;
+    width: 100vw;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+
+    ul{
+        display: flex;
+        flex-direction: row;
+        text-decoration: none;
+
+
+        li{
+            margin-left: auto;
+            margin-right: auto;
+            color: rgb(255, 255, 255);
+            cursor: pointer;
+            list-style-type:none        }
+    }
+}
