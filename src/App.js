@@ -13,6 +13,12 @@ import SignUp from './Authentication/Signup'
 export const UserContext = createContext(null)
 
 function App() {
+
+  const [isadmin, setIsAdmin] = useState([])
+  fetch('https://newsportalhj.herokuapp.com/admin')
+  .then(res => res.json())
+  .then(data => setIsAdmin(data))
+
   const generateToken = () => {
     const User = firebase.auth().currentUser
     console.log(User.email)
@@ -54,7 +60,7 @@ useEffect(() => {
        <Route exact path="/signup">
          <SignUp/>
        </Route>
-        <PrivateRoute>
+        <PrivateRoute exact path="/readmore/:id">
           <NewsPage></NewsPage>
         </PrivateRoute>
         <PrivateRoute>

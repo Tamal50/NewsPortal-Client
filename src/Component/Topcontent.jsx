@@ -4,7 +4,7 @@ import Newsbox from './Newsbox';
 const Topcontent = () => {
     const [news, setnews] = useState([])
     useEffect(() => {
-      fetch('http://localhost:5000/News')
+      fetch('https://newsportalhj.herokuapp.com/News')
       .then((response) => response.json())
       .then((result) => setnews(result))
     }, [])

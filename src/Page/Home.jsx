@@ -9,7 +9,7 @@ import Footer from '../Component/Footer';
 const Home = () => {
     const [catagorynews, setCatagorynews] = useState([])
   const handleClick = (data) => {        
-    fetch(`http://localhost:5000/News/catagory/${data}`)
+    fetch(`https://newsportalhj.herokuapp.com/News/catagory/${data}`)
     .then(res => res.json())
     .then(data => setCatagorynews(data))
   }

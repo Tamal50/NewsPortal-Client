@@ -15,7 +15,7 @@ const AddNews = () => {
 
   const handleAddProduct = (e) => {
     e.preventDefault();
-    fetch("http://localhost:5000/addNews", {
+    fetch("https://newsportalhj.herokuapp.com/addNews", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
